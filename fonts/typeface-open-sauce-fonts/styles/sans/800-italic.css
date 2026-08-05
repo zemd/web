@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Open Sauce Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 800;
+  src: url("../../files/woff2/OpenSauceSans-ExtraBoldItalic.woff2") format("woff2");
+}

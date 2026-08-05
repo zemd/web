@@ -1,0 +1,4 @@
+pnpm format
+git update-index --again
+pnpm typecheck
+pnpm lint-publish

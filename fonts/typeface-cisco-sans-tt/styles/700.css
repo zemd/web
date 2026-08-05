@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Cisco Sans TT";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("../files/woff2/CiscoSansTTBold.woff2") format("woff2");
+}

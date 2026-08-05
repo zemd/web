@@ -1,0 +1,116 @@
+/*
+  Language-specific quotes based on the HTML spec.
+  https://html.spec.whatwg.org/multipage/rendering.html#quotes
+
+  Originally from https://github.com/jensimmons/cssremedy/blob/master/css/quotes.css
+  Modernized using multi-value :lang() syntax.
+*/
+
+/* " " ' ' */
+:where(
+  :lang(
+    af, ak, asa, az, bem, bez, bn, brx, cgg, chr, cy, da, dav, dje, dz, ebu, ee, en, fil, fo, ga, gd, gl, gu, guz, ha, hi, id, ig, jmc, kam, kde, kea, khq, ki, kln, km, kn, ko, ksb, lg, ln, lo, lrc, lu, luo, lv, mas, mer, mfe, mgo, ml, mn, mr, ms, mt, my, naq, nd, ne, nus, nyn, pa, pt, rof, rwk, saq, sbp, seh, ses, si, so, sw, ta, te, teo, th, to, tr, twq, tzm, uz-Cyrl, vai, vai-Latn, vi, vun, xog, yo, yue-Hans, zh, zu
+  )
+) {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* " " ' ' */
+:where(:lang(uz)) {
+  quotes: "\201C" "\201D" "\2019" "\2018";
+}
+
+/* " " " " */
+:where(:lang(eu, tk)) {
+  quotes: "\201C" "\201D" "\201C" "\201D";
+}
+
+/* " " ' ' */
+:where(:lang(ar, ur)) {
+  quotes: "\201D" "\201C" "\2019" "\2018";
+}
+
+/* " " ' ' */
+:where(:lang(fi, he, lag, rn, sn, sv)) {
+  quotes: "\201D" "\201D" "\2019" "\2019";
+}
+
+/* „ " ' ' */
+:where(:lang(sr, sr-Latn)) {
+  quotes: "\201E" "\201C" "\2018" "\2018";
+}
+
+/* „ " „ " */
+:where(:lang(bg, lt)) {
+  quotes: "\201E" "\201C" "\201E" "\201C";
+}
+
+/* „ " ‚ ' */
+:where(:lang(bs-Cyrl, cs, de, dsb, et, hr, hsb, is, lb, luy, mk, sk, sl)) {
+  quotes: "\201E" "\201C" "\201A" "\2018";
+}
+
+/* „ " « » */
+:where(:lang(ka)) {
+  quotes: "\201E" "\201C" "\00AB" "\00BB";
+}
+
+/* „ " ' ' */
+:where(:lang(bs)) {
+  quotes: "\201E" "\201D" "\2018" "\2019";
+}
+
+/* „ " ‚ ' */
+:where(:lang(agq, ff)) {
+  quotes: "\201E" "\201D" "\201A" "\2019";
+}
+
+/* „ " « » */
+:where(:lang(nmg, ro, pl)) {
+  quotes: "\201E" "\201D" "\00AB" "\00BB";
+}
+
+/* „ " » « */
+:where(:lang(hu)) {
+  quotes: "\201E" "\201D" "\00BB" "\00AB";
+}
+
+/* ' ' " " */
+:where(:lang(nl, ti-ER)) {
+  quotes: "\2018" "\2019" "\201C" "\201D";
+}
+
+/* « » ' ' */
+:where(:lang(dua, ksf, rw, nn, nb)) {
+  quotes: "\00AB" "\00BB" "\2018" "\2019";
+}
+
+/* « » " " */
+:where(:lang(ast, bm, br, ca, dyo, el, es, ewo, mg, mua, sg, it, kab, kk, pt-PT, nnh, sq)) {
+  quotes: "\00AB" "\00BB" "\201C" "\201D";
+}
+
+/* « » „ " */
+:where(:lang(bas, be, ky, sah, ru, uk)) {
+  quotes: "\00AB" "\00BB" "\201E" "\201C";
+}
+
+/* « » „ " */
+:where(:lang(zgh, shi, shi-Latn)) {
+  quotes: "\00AB" "\00BB" "\201E" "\201D";
+}
+
+/* « » ‹ › */
+:where(:lang(am, az-Cyrl, fa, fr-CH, gsw, jgo, kkj, mzn)) {
+  quotes: "\00AB" "\00BB" "\2039" "\203A";
+}
+
+/* « » « » */
+:where(:lang(fr, hy, yav)) {
+  quotes: "\00AB" "\00BB" "\00AB" "\00BB";
+}
+
+/* 「 」 『 』 */
+:where(:lang(ja, yue)) {
+  quotes: "\300C" "\300D" "\300E" "\300F";
+}

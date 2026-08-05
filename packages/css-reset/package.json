@@ -1,0 +1,52 @@
+{
+  "name": "@zemd/css-reset",
+  "version": "1.0.0",
+  "description": "A small CSS reset for modern web development.",
+  "keywords": [
+    "css",
+    "css reset",
+    "normalize",
+    "reset",
+    "tailwind",
+    "tailwindcss"
+  ],
+  "homepage": "https://github.com/zemd/web/tree/main/packages/css-reset#readme",
+  "bugs": {
+    "url": "https://github.com/zemd/web/issues"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Dmytro Zelenetskyi",
+    "email": "oss@zemd.dev",
+    "url": "https://zemd.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zemd/web.git",
+    "directory": "packages/css-reset"
+  },
+  "funding": "https://github.com/sponsors/zemd",
+  "style": "./index.css",
+  "files": [
+    "index.css",
+    "extra.css",
+    "quotes.css",
+    "all.css"
+  ],
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": "./index.css",
+    "./package.json": "./package.json",
+    "./index.css": "./index.css",
+    "./index": "./index.css",
+    "./extra.css": "./extra.css",
+    "./extra": "./extra.css",
+    "./quotes.css": "./quotes.css",
+    "./quotes": "./quotes.css",
+    "./all.css": "./all.css",
+    "./all": "./all.css"
+  }
+}

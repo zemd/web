@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url("../../files/woff2/OpenSauceTwo-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300;
+  src: url("../../files/woff2/OpenSauceTwo-LightItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("../../files/woff2/OpenSauceTwo-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("../../files/woff2/OpenSauceTwo-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("../../files/woff2/OpenSauceTwo-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 500;
+  src: url("../../files/woff2/OpenSauceTwo-MediumItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("../../files/woff2/OpenSauceTwo-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 600;
+  src: url("../../files/woff2/OpenSauceTwo-SemiBoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("../../files/woff2/OpenSauceTwo-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src: url("../../files/woff2/OpenSauceTwo-BoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url("../../files/woff2/OpenSauceTwo-ExtraBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 800;
+  src: url("../../files/woff2/OpenSauceTwo-ExtraBoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: url("../../files/woff2/OpenSauceTwo-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 900;
+  src: url("../../files/woff2/OpenSauceTwo-BlackItalic.woff2") format("woff2");
+}

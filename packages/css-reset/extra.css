@@ -1,0 +1,74 @@
+:where(
+  a[href],
+  area,
+  button,
+  input:not(
+    [type="text"],
+    [type="email"],
+    [type="number"],
+    [type="password"],
+    [type=""],
+    [type="tel"],
+    [type="url"],
+    [type="search"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="time"],
+    [type="month"],
+    [type="week"]
+  ),
+  label[for],
+  select,
+  summary,
+  [tabindex]:not([tabindex*="-"])
+) {
+  cursor: pointer;
+}
+
+:where(button[disabled], input[disabled], select[disabled], textarea[disabled]) {
+  cursor: not-allowed;
+}
+
+:where(p, li, dd) :where(a[href]) {
+  text-decoration-line: underline;
+  text-decoration-thickness: from-font;
+  text-underline-offset: 0.15em;
+  text-decoration-skip-ink: auto;
+}
+
+/*
+  Eliminate the 300ms tap delay on touch devices for interactive elements.
+  Without this, mobile browsers wait to see if a tap is a double-tap before
+  firing the click event, resulting in a noticeable lag.
+*/
+:where(a[href], area, button, summary, [tabindex]:not([tabindex*="-"])) {
+  touch-action: manipulation;
+}
+
+/*
+  Provide breathing room for anchor-linked targets so content isn't hidden
+  behind sticky headers or other fixed UI when navigating via fragment links.
+*/
+:where(:target) {
+  scroll-margin-block-start: 2ex;
+}
+
+/*
+  Allow textareas to automatically grow with their content instead of
+  requiring manual resizing. `min-block-size` ensures a reasonable
+  default height when the textarea is empty.
+*/
+@supports (field-sizing: content) {
+  :where(textarea) {
+    field-sizing: content;
+    min-block-size: 3lh;
+  }
+}
+
+/*
+  Enable optimizeLegibility for improved text rendering.
+  Note: may cause performance issues on text-heavy pages.
+*/
+:where(body) {
+  text-rendering: optimizeLegibility;
+}

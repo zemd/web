@@ -1,0 +1,43 @@
+{
+  "name": "@zemd/typeface-cisco-sans-tt",
+  "version": "1.0.0",
+  "description": "Self-hosted Cisco Sans TT font files and ready-to-use CSS.",
+  "keywords": [
+    "cisco",
+    "cisco sans tt",
+    "font",
+    "font-family",
+    "self-hosted",
+    "typeface"
+  ],
+  "homepage": "https://github.com/zemd/web/tree/main/fonts/typeface-cisco-sans-tt#readme",
+  "bugs": {
+    "url": "https://github.com/zemd/web/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Dmytro Zelenetskyi",
+    "email": "oss@zemd.dev",
+    "url": "https://zemd.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zemd/web.git",
+    "directory": "fonts/typeface-cisco-sans-tt"
+  },
+  "funding": "https://github.com/sponsors/zemd",
+  "files": [
+    "files",
+    "licenses",
+    "styles"
+  ],
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    "./styles/*": "./styles/*",
+    "./files/*": "./files/*"
+  }
+}

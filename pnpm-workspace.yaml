@@ -1,0 +1,9 @@
+saveExact: true
+
+packages:
+  - packages/*
+  - fonts/*
+
+versioning:
+  changelog:
+    storage: repository

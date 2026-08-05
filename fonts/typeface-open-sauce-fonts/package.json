@@ -1,0 +1,42 @@
+{
+  "name": "@zemd/typeface-open-sauce-fonts",
+  "version": "1.0.0",
+  "description": "Self-hosted Open Sauce font files and ready-to-use CSS.",
+  "keywords": [
+    "font",
+    "font-family",
+    "open sauce",
+    "self-hosted",
+    "typeface"
+  ],
+  "homepage": "https://github.com/zemd/web/tree/main/fonts/typeface-open-sauce-fonts#readme",
+  "bugs": {
+    "url": "https://github.com/zemd/web/issues"
+  },
+  "license": "MIT AND OFL-1.1",
+  "author": {
+    "name": "Dmytro Zelenetskyi",
+    "email": "oss@zemd.dev",
+    "url": "https://zemd.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zemd/web.git",
+    "directory": "fonts/typeface-open-sauce-fonts"
+  },
+  "funding": "https://github.com/sponsors/zemd",
+  "files": [
+    "files",
+    "licenses",
+    "styles"
+  ],
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    "./styles/*": "./styles/*",
+    "./files/*": "./files/*"
+  }
+}
