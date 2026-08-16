@@ -39,5 +39,8 @@
     "./package.json": "./package.json",
     "./styles/*": "./styles/*",
     "./files/*": "./files/*"
+  },
+  "scripts": {
+    "lint-publish": "publint"
   }
 }

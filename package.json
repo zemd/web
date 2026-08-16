@@ -20,20 +20,24 @@
   "funding": "https://github.com/sponsors/zemd",
   "scripts": {
     "build": "turbo run build",
-    "test": "turbo run test && node --test .github/scripts/package-contract.test.mjs .github/scripts/release-pr-body.test.mjs .github/scripts/release-workflow.test.mjs",
+    "test": "turbo run test && node --test .github/scripts/repository-config.test.mjs",
+    "test-coverage": "turbo run test-coverage && node --test --experimental-test-coverage --test-coverage-include=.github/scripts/repository-config.test.mjs --test-reporter=spec --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=coverage.lcov .github/scripts/repository-config.test.mjs",
     "typecheck": "turbo run typecheck",
     "format": "oxfmt",
     "format-check": "oxfmt --check",
-    "lint": "oxlint --type-aware --fix",
+    "lint-fix": "oxlint --type-aware --fix",
     "lint-check": "oxlint --type-aware --deny-warnings",
-    "lint-publish": "pnpm -r exec publint",
+    "lint-actions": "zizmor --strict-collection --collect=default --persona=pedantic .",
+    "lint-publish": "turbo run lint-publish",
+    "pre-commit": "./.githooks/pre-commit",
+    "pre-push": "./.githooks/pre-push",
+    "git-hooks-install": "./.githooks/install.sh",
     "release-check": "pnpm run format-check && pnpm run lint-check && pnpm run typecheck && pnpm run build && pnpm run test && pnpm run lint-publish",
     "release-change": "pnpm change",
     "release-status": "pnpm change status",
-    "prepare": "husky"
+    "prepare": "pnpm run git-hooks-install"
   },
   "devDependencies": {
-    "husky": "9.1.7",
     "oxfmt": "0.62.0",
     "oxlint": "1.77.0",
     "oxlint-tsgolint": "7.0.2001",
@@ -43,5 +47,5 @@
   "engines": {
     "node": ">=24"
   },
-  "packageManager": "pnpm@11.20.0+sha512.9a6f330a95b66446ea088faf1521405a8a01f07fde7124cc9958dfed52d4bb436737e65b08f85f37b46fcba375092558ac51262b816844b22f63406ed166bfee"
+  "packageManager": "pnpm@11.21.0+sha512.521705bce689924eac72f5a3587122f362689ef6571e55ba80076fd637c11132ecffada26fad4ea79c485bfddbfd3d5a2a5b05805a77e893de71ec8a6cca3bb1"
 }

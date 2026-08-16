@@ -27,13 +27,15 @@ pnpm install
 > [!NOTE]
 > The repository uses [pnpm](https://pnpm.io) workspaces. Install it with `corepack enable` or follow the [pnpm installation guide](https://pnpm.io/installation).
 
+A normal install configures the native Git hooks in [`.githooks`](.githooks). The checked-in [Dev Container](.devcontainer/devcontainer.json) provides the pinned Node.js, pnpm, and zizmor toolchain.
+
 ## Security
 
 To report a vulnerability, follow [`SECURITY.md`](SECURITY.md). Do not disclose security reports in a public issue.
 
 ## Contributing
 
-Issues and pull requests are welcome. Before opening a PR, please make sure that `pnpm lint-check`, `pnpm format-check`, `pnpm typecheck`, and `pnpm test` all pass.
+Issues and pull requests are welcome. Before opening a PR, run `pnpm pre-push`; CI remains authoritative.
 
 ## License
 
