@@ -1,4 +1,5 @@
 saveExact: true
+storeDir: .pnpm-store
 
 packages:
   - packages/*
@@ -7,3 +8,11 @@ packages:
 versioning:
   changelog:
     storage: repository
+
+# Seven days; keep aligned with Dependabot's npm cooldown.
+minimumReleaseAge: 10080
+minimumReleaseAgeStrict: true
+minimumReleaseAgeIgnoreMissingTime: false
+minimumReleaseAgeExclude:
+  - "@zemd/*"
+trustPolicy: no-downgrade

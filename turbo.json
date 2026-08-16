@@ -1,16 +1,30 @@
 {
-  "$schema": "https://turborepo.com/schema.json",
+  "$schema": "https://turborepo.dev/schema.json",
+  "ui": "stream",
+  "globalDependencies": [".github/workflows/*.yml"],
+  "noUpdateNotifier": true,
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
     "test": {
-      "dependsOn": ["build"],
-      "outputs": []
+      "dependsOn": ["^build"]
+    },
+    "test-coverage": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "outputs": ["coverage.lcov"]
+    },
+    "lint-publish": {
+      "dependsOn": ["build"]
+    },
+    "pre-commit": {},
+    "pre-push": {
+      "dependsOn": ["build"]
     },
     "typecheck": {
-      "dependsOn": ["^typecheck"],
+      "dependsOn": ["build", "^build"],
       "outputs": []
     }
   }

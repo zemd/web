@@ -48,5 +48,8 @@
     "./quotes": "./quotes.css",
     "./all.css": "./all.css",
     "./all": "./all.css"
+  },
+  "scripts": {
+    "lint-publish": "publint"
   }
 }

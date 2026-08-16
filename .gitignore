@@ -10,6 +10,7 @@ node_modules
 
 # testing
 /coverage
+coverage.lcov
 
 # output
 dist/
