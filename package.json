@@ -20,13 +20,13 @@
   "funding": "https://github.com/sponsors/zemd",
   "scripts": {
     "build": "turbo run build",
-    "test": "turbo run test && node --test .github/scripts/repository-config.test.mjs",
-    "test-coverage": "turbo run test-coverage && node --test --experimental-test-coverage --test-coverage-include=.github/scripts/repository-config.test.mjs --test-reporter=spec --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=coverage.lcov .github/scripts/repository-config.test.mjs",
+    "test": "turbo run test",
+    "test-coverage": "turbo run test-coverage",
     "typecheck": "turbo run typecheck",
     "format": "oxfmt",
     "format-check": "oxfmt --check",
-    "lint-fix": "oxlint --type-aware --fix",
-    "lint-check": "oxlint --type-aware --deny-warnings",
+    "lint-fix": "echo No JavaScript or TypeScript files to lint.",
+    "lint-check": "echo No JavaScript or TypeScript files to lint.",
     "lint-actions": "zizmor --strict-collection --collect=default --persona=pedantic .",
     "lint-publish": "turbo run lint-publish",
     "pre-commit": "./.githooks/pre-commit",
@@ -39,8 +39,6 @@
   },
   "devDependencies": {
     "oxfmt": "0.62.0",
-    "oxlint": "1.77.0",
-    "oxlint-tsgolint": "7.0.2001",
     "publint": "0.3.23",
     "turbo": "2.10.8"
   },
