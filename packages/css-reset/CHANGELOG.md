@@ -1,5 +1,11 @@
 # @zemd/css-reset
 
+## 1.1.0
+
+### Minor Changes
+
+- Expose the default reset at the package root and move package metadata to the zemd/web monorepo.
+
 ## 1.0.0
 
 ### Major Changes

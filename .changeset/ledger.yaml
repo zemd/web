@@ -1,0 +1,12 @@
+"@zemd/css-reset@1.1.0":
+  dir: packages/css-reset
+  intents:
+    - nice-kiwis-knock
+"@zemd/typeface-cisco-sans-tt@1.0.0":
+  dir: fonts/typeface-cisco-sans-tt
+  intents:
+    - slick-cases-smoke
+"@zemd/typeface-open-sauce-fonts@1.0.0":
+  dir: fonts/typeface-open-sauce-fonts
+  intents:
+    - lemon-paws-enter
