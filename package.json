@@ -38,9 +38,9 @@
     "prepare": "pnpm run git-hooks-install"
   },
   "devDependencies": {
-    "oxfmt": "0.73.0",
+    "oxfmt": "0.75.0",
     "publint": "0.3.25",
-    "turbo": "2.11.8"
+    "turbo": "2.11.10"
   },
   "engines": {
     "node": ">=24"
